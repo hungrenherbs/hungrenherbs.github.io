@@ -1,6 +1,6 @@
 # Hung-Ren Ginseng & Herbs
 
-Bilingual website for Hung-Ren Ginseng & Herbs Inc (宏仁堂), Doraville, Georgia. GitHub repository: https://github.com/lumigems2025/hung-ren-store. This project contains only the store website and its store assets.
+Bilingual website for Hung-Ren Ginseng & Herbs Inc (宏仁堂), Doraville, Georgia. GitHub repository: https://github.com/hungrenherbs/hungrenherbs.github.io. This project contains only the store website and its store assets.
 
 ## Pages
 
@@ -35,7 +35,9 @@ The repository does not contain customer information, account credentials, or th
 
 ## Hosting
 
-The public website is https://hung-ren-ginseng-herbs.xh54056.chatgpt.site. Sites hosting is configured in `.openai/hosting.json`; GitHub stores the source code in the private store repository. The website is portable to a suitable static host by uploading `dist/`. If the production domain changes, update `origin` in `build.mjs` and rebuild to update canonical links, social metadata, and the sitemap.
+The intended website address is https://hungrenherbs.github.io/. GitHub Pages builds and publishes the `dist/` directory on each push to `main` using `.github/workflows/pages.yml`. In the repository's Pages settings, the source is GitHub Actions. The site presents store information; it does not process online purchases, payments, bookings, or customer data.
+
+To use another host, set `SITE_URL` when running `node build.mjs`, then upload `dist/`. This updates canonical links, social metadata, and the sitemap. `.openai/hosting.json` records the earlier Sites deployment.
 
 ## Online appointments
 

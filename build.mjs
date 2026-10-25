@@ -1,5 +1,5 @@
 import { mkdir, writeFile } from 'node:fs/promises';
-const origin = 'https://hung-ren-ginseng-herbs.xh54056.chatgpt.site';
+const origin = (process.env.SITE_URL || 'https://hungrenherbs.github.io').replace(/\/$/, '');
 const phone = '+17704528289';
 const maps = 'https://www.google.com/maps/dir/?api=1&destination=Hung-Ren+Ginseng+%26+Herbs+Inc,+5095+Buford+Hwy+NE+Suite+C,+Doraville,+GA+30340';
 const esc = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -41,7 +41,7 @@ for (const [locale,c] of Object.entries(content)) {
   await writeFile(`${dir}/${file}`,html);
  }
 }
-await writeFile('dist/404.html','<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Hung-Ren</title><body style="font:20px system-ui;background:#f7f5ee;color:#263c31;padding:10vw"><h1>Page not found</h1><p>未找到此页面。</p><p>Return to Hung-Ren Ginseng & Herbs / 返回宏仁堂首页</p><a href="/">Home / 首页</a></body></html>');
+await writeFile('dist/404.html','<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Hung-Ren</title><body style="font:20px system-ui;background:#f7f5ee;color:#263c31;padding:10vw"><h1>Page not found</h1><p>未找到此页面。</p><p>Return to Hung-Ren Ginseng & Herbs / 返回宏仁堂首页</p><a href="' + origin + '/">Home / 首页</a></body></html>');
 await writeFile('dist/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['','zh/'].flatMap(p=>files.map(f=>`<url><loc>${origin}/${p}${f==='index.html'?'':f}</loc></url>`)).join('')}</urlset>`);
 await writeFile('dist/robots.txt',`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
 console.log('Built 4 pages in English and Chinese.');
