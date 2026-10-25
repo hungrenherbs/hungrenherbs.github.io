@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hung-ren-ginseng-herbs.xh54056.chatgpt.site/sitemap.xml
