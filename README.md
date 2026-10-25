@@ -43,11 +43,11 @@ To use another host, set `SITE_URL` when running `node build.mjs`, then upload `
 
 The first version uses **Call to book**, as requested. It does not collect appointment requests, send email or SMS, or claim to reserve time slots. For a later online booking phase, connect a business scheduling account, set appointment durations and availability, and provide its public booking URL. Only then should the booking link be added to the site.
 
-Store hours are from the supplied introduction; practitioner availability is confirmed by phone. Product categories reflect the information and photos supplied, not a live stock inventory. No product prices or treatment guarantees have been invented.
+Store hours follow the owner's latest update: open daily, 10:00 AM–6:00 PM. Practitioner availability is confirmed by phone. Product categories reflect the information and photos supplied, not a live stock inventory. No product prices or treatment guarantees have been invented.
 
 ## Language and credential review
 
-The English uses U.S. customer-facing language; the Chinese is localized rather than translated word for word. Place names retain Doraville and Buford Highway for recognition and navigation. Phone, address, license numbers, store hours, and the 1985 founding date match the supplied materials. “Licensed Acupuncturist” / “持照针灸师” is used consistently. Store hours are distinguished from appointment availability.
+The English uses U.S. customer-facing language; the Chinese is localized rather than translated word for word. Place names retain Doraville and Buford Highway for recognition and navigation. Phone, address, license numbers, and the 1985 founding date match the supplied materials. Store hours reflect the owner's latest update. “Licensed Acupuncturist” / “持照针灸师” is used consistently. Store hours are distinguished from appointment availability.
 
 NCBAHM's 2026 update states that NCCAOM is now NCBAHM, and the former Oriental Medicine credential is now Acupuncture and Herbal Medicine, with prior OM Diplomates automatically recognized under AHM. The website uses the updated name and includes “formerly NCCAOM.” This terminology check does not independently verify Ling Liu's current individual license or certification status.
 

@@ -70,9 +70,8 @@ export default {
     "addressLabel": "FIND US",
     "address": "5095 Buford Hwy NE, Suite C<br>Doraville, GA 30340",
     "hoursLabel": "STORE HOURS",
-    "hours": "Monday & Wednesday–Sunday",
+    "hours": "Open daily",
     "hoursTime": "10:00 AM–6:00 PM",
-    "closed": "Closed Tuesdays",
     "appointmentNote": "For acupuncture appointments, please call to confirm availability. Appointment times may differ from store hours.",
     "footerLine": "Ginseng. Chinese herbs. Personal care.",
     "footerNote": "Hung-Ren Ginseng & Herbs Inc · Doraville, Georgia",
@@ -192,10 +191,6 @@ export default {
       [
         "Which languages do you speak?",
         "We welcome inquiries in Chinese and English."
-      ],
-      [
-        "Are you open on Tuesdays?",
-        "The store is closed on Tuesdays. Our listed hours are 10:00 AM–6:00 PM on Monday and Wednesday through Sunday."
       ]
     ],
     "titles": [
@@ -280,9 +275,8 @@ export default {
     "addressLabel": "门店地址",
     "address": "5095 Buford Hwy NE, Suite C<br>Doraville, GA 30340",
     "hoursLabel": "营业时间",
-    "hours": "周一、周三至周日",
+    "hours": "每天营业",
     "hoursTime": "上午 10:00–下午 6:00",
-    "closed": "周二休息",
     "appointmentNote": "针灸预约时段与门店营业时间可能不同，请提前致电确认。",
     "footerLine": "人参 · 中草药 · 用心服务",
     "footerNote": "宏仁堂 Hung-Ren Ginseng & Herbs Inc · Doraville, Georgia",
@@ -402,10 +396,6 @@ export default {
       [
         "可以使用哪些语言沟通？",
         "我们提供中文与英文服务。"
-      ],
-      [
-        "周二营业吗？",
-        "周二休息。门店营业时间为周一、周三至周日，上午 10:00 至下午 6:00。"
       ]
     ],
     "titles": [
