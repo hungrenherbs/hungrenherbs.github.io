@@ -1,0 +1,12 @@
+{
+  "name": "hung-ren-ginseng-herbs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilingual website for Hung-Ren Ginseng & Herbs Inc.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node scripts/check.mjs",
+    "start": "node server.mjs"
+  }
+}
